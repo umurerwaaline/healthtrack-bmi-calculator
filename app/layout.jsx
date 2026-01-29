@@ -6,7 +6,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Health Track',
+  title: 'BMI',
   description: 'Calculate your BMI and track your health journey',
 }
 

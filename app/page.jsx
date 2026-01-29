@@ -25,16 +25,16 @@ export default function BMICalculator() {
         </div>
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-600">
           {["Calculators", "Coaching", "Programs", "About Us"].map((item) => (
-            <a key={item} href="#" className="hover:text-teal-500">{item}</a>
+            <a key={item} href="#" className="hover:text-blue-600">{item}</a>
           ))}
-          <button className="bg-teal-500 text-white px-5 py-2 rounded-md">Login</button>
+          <button className="bg-blue-600 text-white px-5 py-2 rounded-md">Login</button>
         </nav>
       </header>
 
       <main className="max-w-6xl mx-auto p-8 grid lg:grid-cols-2 gap-8">
         <section>
           <h1 className="text-3xl font-bold mb-2">
-            HealthTrack <span className="text-teal-500">BMI Calculator</span>
+            HealthTrack <span className="text-blue-600">BMI Calculator</span>
           </h1>
           <p className="text-gray-600 mb-8 text-sm">
             Calculate your Body Mass Index (BMI) to understand your health status and receive personalized wellness recommendations.
@@ -47,7 +47,7 @@ export default function BMICalculator() {
                 <button
                   key={u}
                   onClick={() => setUnit(u)}
-                  className={`flex-1 py-2 text-sm ${unit === u ? "bg-teal-50 text-teal-500 border-b-2 border-teal-500" : "text-gray-500"}`}
+                  className={`flex-1 py-2 text-sm ${unit === u ? "bg-blue-50 text-blue-600 border-b-2 border-blue-600" : "text-gray-500"}`}
                 >
                   {u === "metric" ? "Metric (cm/kg)" : "Imperial (ft/in/lbs)"}
                 </button>
@@ -83,7 +83,7 @@ export default function BMICalculator() {
               </div>
             </div>
 
-            <button onClick={calculateBMI} className="w-full bg-teal-500 text-white py-3 rounded-lg font-medium hover:bg-teal-600">
+            <button onClick={calculateBMI} className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700">
               Calculate My BMI
             </button>
 
@@ -93,7 +93,7 @@ export default function BMICalculator() {
                   <div>
                     <p className="text-xs text-gray-500 font-semibold mb-1">YOUR RESULT</p>
                     <p className="text-4xl font-bold">
-                      {bmi} <span className="text-teal-500 text-lg font-medium">{getStatus(bmi)}</span>
+                      {bmi} <span className="text-blue-600 text-lg font-medium">{getStatus(bmi)}</span>
                     </p>
                   </div>
                 </div>
@@ -108,12 +108,12 @@ export default function BMICalculator() {
         <section className="relative rounded-2xl overflow-hidden min-h-[400px]">
           <img
             src="/body-measurement.jpg"
-            alt="Person measuring body mass on scale"
+            alt="Young man measuring body mass on scale"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
           <div className="absolute bottom-0 p-8 text-white">
-            <span className="bg-teal-500 text-xs px-3 py-1 rounded-full font-medium">PREMIUM COACHING</span>
+            <span className="bg-blue-600 text-xs px-3 py-1 rounded-full font-medium">PREMIUM COACHING</span>
             <h2 className="text-2xl font-bold mt-4 mb-2">Beyond numbers: Personalize your health journey.</h2>
             <p className="text-sm text-gray-200 mb-4">
               A healthy BMI is just the beginning. Our expert coaches help you optimize your metabolism, build muscle, and feel your best.
