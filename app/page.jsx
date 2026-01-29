@@ -97,9 +97,6 @@ export default function BMICalculator() {
                     </p>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 mt-2">
-                  Based on your measurements, your BMI is within the healthy range. Keep up the great work with your nutrition and exercise!
-                </p>
               </div>
             )}
           </div>
