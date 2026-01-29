@@ -106,7 +106,7 @@ export default function BMICalculator() {
         <section className="relative rounded-2xl overflow-hidden min-h-[400px]">
           <img
             src="/body-measurement.jpg"
-            alt="Young woman measuring body mass on scale"
+            alt="Young man measuring body mass on scale"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
